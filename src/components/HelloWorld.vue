@@ -25,19 +25,19 @@ animation:change 10s linear 0s infinite;
 }
 @keyframes change{
 0% {
-color: #A8D8EA;
+color: #A66CFF;
 }
 25% {
-color: #AA96DA;
+color: #9C9EFE;
 }
 50% {
-color: #FCBAD3;
+color: #AFB4FF;
 }
 75% {
-color: #FCBAD3;
+color: #B1E1FF;
 }
 100% {
-color: #A8D8EA;
+color: #A66CFF;
 }
 }
 </style>
