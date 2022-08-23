@@ -2,7 +2,7 @@
 <div class="login-interface" id="exampleDialog">
     <button class="mdui-btn mdui-btn-icon" mdui-dialog-close>
         <i class="mdui-icon material-icons">close</i></button>
-    <div class="mdui-dialog-title mdui-color-indigo">登录</div>
+    <div class="mdui-dialog-title mdui-color-indigo">注册</div>
     <form id="login-form">
         <div class="mdui-textfield mdui-textfield-floating-label">
             <label class="mdui-textfield-label" placeholder="" for="1" @ignore="a11y">用户名或邮箱</label>
@@ -22,17 +22,24 @@
             </button>
             <ul class="mdui-menu" id="mc-login-menu">
                 <li class="mdui-menu-item"><a class="mdui-ripple">忘记密码</a></li>
-                <li class="mdui-menu-item"><router-link to="/Signup" class="mdui-ripple">注册
+                <li class="mdui-menu-item"><router-link to="/login" class="mdui-ripple">登录
                 </router-link></li>
             </ul>
             <div class="divider"></div>
-            <button type="submit" class="mdui-btn mdui-btn-raised mdui-color-blue">登录</button>
+            <button type="submit" class="mdui-btn mdui-btn-raised mdui-color-blue">注册</button>
         </div>
     </form>
 </div>
 </template>
 
 <style>
+a:link{color: white;}
+
+a:visited{color:white;}
+
+a:hover{color:white;}
+
+a:active{color:#ccc;}
 .login-interface {
     overflow-y: auto;
 }
@@ -89,13 +96,6 @@
         margin-top: 14px;
     }
 }
-a:link{color: white;}
-
-a:visited{color:white;}
-
-a:hover{color:white;}
-
-a:active{color:#ccc;}
 </style>
 
 <script>
@@ -103,7 +103,7 @@ export default {
   mounted() {
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = '/assets/js/login.js';
+    script.src = '/assets/js/reg.js';
     document.body.appendChild(script);
   },
 };

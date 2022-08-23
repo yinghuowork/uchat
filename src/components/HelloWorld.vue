@@ -1,6 +1,11 @@
 <template>
 <img src="../../public/assets/pwa/android-chrome-512x512.png" alt="logo" id="logo" />
 <p style="white-space: pre;"> </p>
+<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">下载</button>
+
+<router-link to="/login"><button class="mdui-btn mdui-btn-raised mdui-ripple"> 前往Web端</button>
+</router-link>
+<br>
 <div id="intro">我们是一家<div id="penshuijiroufan" class="rgb">
     <span>高情商</span>
 </div>的聊天软件</div>
